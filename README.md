@@ -1,5 +1,3 @@
-# Criando o conteúdo do arquivo .md melhorado
-
 # 🚀 Desafio 3 - COMPASS UOL
 
 ## 🧠 Objetivo
