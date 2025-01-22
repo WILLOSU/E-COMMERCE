@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Criando o conteúdo do arquivo .md melhorado
 
-## Getting Started
+# 🚀 Desafio 3 - COMPASS UOL
 
-First, run the development server:
+## 🧠 Objetivo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Avaliar sua capacidade de resolução de problemas, utilizando as ferramentas necessárias e apresentando assertividade frente às demandas solicitadas.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📋 Instruções
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Implementação de Commerce
 
-## Learn More
+O design base do projeto está disponível no Figma:
+[Figma Challenge 03](https://www.figma.com/design/V0UGvd2pWq6LNFJ2omOaUP/Challenge-03?node-id=4-1&p=f)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🛠️ Requisitos Obrigatórios
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+#### **1. Autenticação de Usuário**
+- Implementar autenticação utilizando **Firebase**;
+- Permitir login com o **Google**.
 
-## Deploy on Vercel
+#### **2. Tecnologias Utilizadas**
+- O projeto deve ser desenvolvido utilizando **React**;
+- Utilizar **TypeScript**;
+- Adotar um design **mobile-first**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### **3. API e Dados**
+- Copiar o arquivo JSON fornecido e criar uma API utilizando o **Run Mocky**;
+- Utilizar o link gerado no **Run Mocky** para realizar as requisições necessárias.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+#### **4. Página Home**
+- Ao clicar no campo de busca, o usuário deverá ser redirecionado para a página **Search**;
+- Criar carrosséis de produtos utilizando uma biblioteca de sua preferência:
+  - **Carrossel 1:** Renderizar produtos com base na **categoria**.
+  - **Carrossel 2:** Renderizar produtos à sua escolha.
+
+#### **5. Página Search**
+- Criar um campo de busca para filtrar os produtos por nome;
+- Exibir os três produtos mais populares da API na seção **Popular Products**.
+
+#### **6. Página Explore Products**
+- Renderizar todos os produtos disponíveis na API;
+- A tela de filtro deverá ser acionada ao clicar no botão **Filter**;
+- A tela de filtro deve ser um **Bottom Sheet** (sugestão: utilizar **Drawer Navigator | React Navigation**);
+- Implementar o filtro utilizando os dados da API.
+
+#### **7. Página Product Detail**
+- Redirecionar o usuário para a página **Product Detail** ao clicar em qualquer cartão de produto;
+- Renderizar todos os reviews disponíveis na API para o produto;
+- Adicionar uma seção com um carrossel de produtos à sua escolha;
+- Implementar a funcionalidade de adicionar o produto ao carrinho ao clicar no botão **Add To Cart**.
+
+#### **8. Página Shopping Cart**
+- Utilizar a **API Context** para gerenciar o estado do carrinho;
+- O ícone do carrinho deverá exibir a **quantidade de itens selecionados** (exemplo na página **Explore Products**);
+- Permitir adicionar ou remover itens do carrinho, ajustando a quantidade conforme necessário;
+- O ícone de lixeira ao lado de **Shopping Cart** deverá limpar o carrinho completamente;
+- Calcular e exibir o **valor total** com base nos produtos adicionados.
+
+#### **9. Imagens**
+- Usar a mesma imagem para todos os usuários nos reviews, já que a API não fornece imagens de usuário.
+
+---
+
+### 🔗 Requisitos Opcionais
+- Substituir a API REST fornecida por uma **API GraphQL**;
+- Fazer o **deploy** do projeto em qualquer plataforma;
+- Criar um design para **desktop**.
+
+---
+
+## 🔗 Links Importantes
+- **Figma:** [Figma Challenge 03](https://www.figma.com/design/V0UGvd2pWq6LNFJ2omOaUP/Challenge-03?node-id=4-1&p=f)
+
+- **JSON Mocky:** [Run Mocky API](https://run.mocky.io/v3/71448aa4-d73a-4213-a87e-fbd7d1758109)
+
+---
+
+## 🚀 Iniciando o Projeto
+
+1. **Instalar o Next.js:**
+   ```bash
+   npx create-next-app@latest
+   npm install next react react-dom
+   npm install --save-dev typescript @types/react @types/node
+
+2. **Instalar a Biblioteca Styled Components:** 
+npm install styled-components@latest
+   
