@@ -1,0 +1,13 @@
+{
+  "EXAMPLE_COLOR_1": "rgb(0, 113, 114)",
+  "EXAMPLE_COLOR_2": "rgb(242, 147, 37)",
+  "EXAMPLE_COLOR_3": "rgb(217, 79, 4)",
+  "COLORS_PRIMARY": "rgb(10, 207, 131)",
+  "COLORS_DEFAULT": "rgb(0, 0, 0)",
+  "COLORS_GREY_DARK_1": "rgb(127, 127, 127)",
+  "COLORS_GREY": "rgb(186, 186, 186)",
+  "COLORS_GREY_LIGHT_1": "rgb(246, 246, 246)",
+  "COLORS_GREY_LIGHT_2": "rgb(243, 243, 243)",
+  "COLORS_WHITE": "rgb(255, 255, 255)",
+  "COLORS_ACCENT": "rgb(255, 193, 32)"
+}
