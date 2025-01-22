@@ -1,6 +1,9 @@
 :root {
---border-radius: 12px;
---logo-color: #5D5D6D;
+  --border-radius: 12px;
+  --logo-color: #5D5D6D;
+  --bg-secondary: #FFFF;
+  --text-dark: #BABABA;
+  --delete-color: #52EA5A;
 }
 
 *{

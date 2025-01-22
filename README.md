@@ -1,5 +1,3 @@
-# Criando o conteúdo do arquivo .md melhorado
-
 # 🚀 Desafio 3 - COMPASS UOL
 
 ## 🧠 Objetivo
@@ -77,6 +75,8 @@ O design base do projeto está disponível no Figma:
 - **Figma:** [Figma Challenge 03](https://www.figma.com/design/V0UGvd2pWq6LNFJ2omOaUP/Challenge-03?node-id=4-1&p=f)
 
 - **JSON Mocky:** [Run Mocky API](https://run.mocky.io/v3/71448aa4-d73a-4213-a87e-fbd7d1758109)
+
+- **GitHub:** https://github.com/WILLOSU/E-COMMERCE
 
 ---
 
