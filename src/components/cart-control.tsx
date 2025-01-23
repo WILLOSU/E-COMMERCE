@@ -15,7 +15,7 @@ const CartCount = styled.span`
     background-color: var(--delete-color);
     color: white;
 
-    margin-left: -10px;
+    margin-left: -10px; //puxando o contador para esquerda
 `
 
 const Container = styled.button`
