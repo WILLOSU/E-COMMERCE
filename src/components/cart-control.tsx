@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 import { RodDireita } from "./icons/rod_Direita-icon";
 import { RodEsquerda } from "./icons/rod_Esquerda-icon";
 
-
+// bolinha onde apresenta a qtde
 const CartCount = styled.span`
     width: 24px;
     height: 24px;
@@ -37,8 +37,8 @@ const Container = styled.button`
 
 const Rodas = styled.div`
     display: flex;
-    gap: 4px; /* Espaço entre as rodas */
-    margin-top: 2px; /* Ajusta a distância para o carrinho */
+    gap: 4px;           /* Espaço entre as rodas */
+    margin-top: 2px;    /* Ajusta a distância para o carrinho */
 `;
 
 export function CartControl(){

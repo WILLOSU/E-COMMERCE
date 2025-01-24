@@ -7,7 +7,7 @@ import { SearchIcon } from "./icons/search-icon";
 
 
 
-// borda
+// retângulo de pesquisa
 export const PrimaryInput = styled.input`
     width: 326px;
     height: 45;
@@ -41,7 +41,8 @@ const InputContainer = styled.div`
     }
 `
 // nova interface para extender as props comuns
-// passando por generics html, precisa importar
+// passando por generics html - inputElment , precisa importar
+
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
     value: string,
     handleChange: (value: string ) => void
@@ -52,7 +53,8 @@ export function PrimaryInputWSearchIcon(props: InputProps){
         <InputContainer>
             <PrimaryInput 
                  onChange={(event) => props.handleChange(event.target.value)}
-                {...props} // pegando tudo que tem dentro copiando e passando para o primary imputy 
+                {...props} // Operador ...props 
+                 // pegando tudo que tem dentro copiando e passando para o primary imputy 
             />
             <SearchIcon/>
         </InputContainer>

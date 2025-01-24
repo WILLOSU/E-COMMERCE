@@ -1,4 +1,4 @@
-
+/* imagem usando svg, e uma função que retorna*/
 export function CartIcon(){
     return (
 
