@@ -1,6 +1,8 @@
 
-/*
+/* 
+
    HOOKS
+   Controle de itens no carrinho !!
     Utilizado para consultar o valor do local storage,
     achei melhor por ser uma lógica de controle de estado,
     mesmo sabendo que não estou controlando um estado do react,

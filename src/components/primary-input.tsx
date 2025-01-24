@@ -1,6 +1,11 @@
+
+/* Pesquisa dos it*/
+
 import { InputHTMLAttributes } from "react";
 import { styled } from "styled-components";
 import { SearchIcon } from "./icons/search-icon";
+
+
 
 // borda
 export const PrimaryInput = styled.input`
@@ -32,7 +37,7 @@ const InputContainer = styled.div`
         position: absolute;
         left: 20px;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-50%); // Y = para ficar na vertical e  centralizado
     }
 `
 // nova interface para extender as props comuns
@@ -46,7 +51,7 @@ export function PrimaryInputWSearchIcon(props: InputProps){
     return (
         <InputContainer>
             <PrimaryInput 
-                onChange={(event) => props.handleChange(event.target.value)} 
+                 onChange={(event) => props.handleChange(event.target.value)}
                 {...props} // pegando tudo que tem dentro copiando e passando para o primary imputy 
             />
             <SearchIcon/>

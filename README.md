@@ -91,3 +91,4 @@ O design base do projeto está disponível no Figma:
 2. **Instalar a Biblioteca Styled Components:** 
 npm install styled-components@latest
    
+<Logo className={dmMono.className} href="/">{title || ""}</Logo>

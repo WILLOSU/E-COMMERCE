@@ -1,9 +1,14 @@
+
+// Controla a quantidade de itens no carrinho
+
+
 import { styled } from "styled-components";
 import { useLocalStorage } from "@/hooks/useLocalStorage";
 import { CartIcon } from "./icons/cart-icon";
 import { useRouter } from "next/navigation";
 import { RodDireita } from "./icons/rod_Direita-icon";
 import { RodEsquerda } from "./icons/rod_Esquerda-icon";
+
 
 const CartCount = styled.span`
     width: 24px;
@@ -17,6 +22,7 @@ const CartCount = styled.span`
 
     margin-left: -10px; //puxando o contador para esquerda
 `
+
 
 const Container = styled.button`
     position: relative;
@@ -45,13 +51,14 @@ export function CartControl(){
 
     return (
         <Container onClick={handleNavigateToCart}>
-            <CartIcon/>
+            
+            <CartIcon />
             <Rodas>
-            <RodDireita/>
-            <RodEsquerda/>
+                <RodDireita />
+                <RodEsquerda />
             </Rodas>
             {value.length > 0 && <CartCount>{value.length}</CartCount>}
-            
         </Container>
-    )
+    );
+    
 }

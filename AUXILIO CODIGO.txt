@@ -1,0 +1,45 @@
+export function Header({ title, isFirstScreen, onIconClick }: HeaderProps) {
+        return (
+            <TagHeader>
+                <IconWrapper onClick={onIconClick}>
+                    {isFirstScreen ? <HomeIcon/> : <ChevronLeft/>}
+                </IconWrapper>
+                <div>
+                    <PrimaryInputWSearchIcon 
+                        // value={search} 
+                        // handleChange={setSearch}
+                        placeholder="Search headphone"
+                    />
+                    <CartControl />
+                </div>
+            </TagHeader>
+        );
+    }
+
+
+onChange={(event) => props.handleChange(event.target.value)}
+
+// CÓDIGO QUE POSSO NÃO UTILIZAR 
+
+
+const Logo = styled.a` /* âncora da logo */
+    color: var(--logo-color);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 150%;
+    text-decoration: none;
+`;
+
+const IconWrapper = styled.div`
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer;     
+    padding: 0px;         
+    margin-left: 9px;     /* Espaço entre o ícone e a borda esquerda */
+    width: 48px;          
+    height: 48px;
+    gap: 2px;         
+     
+   
+`;
