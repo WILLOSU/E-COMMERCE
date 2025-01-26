@@ -16,26 +16,28 @@
 
 */
 
-
-
 import { useEffect, useState } from "react";
 
-export function useLocalStorage<T>(item: string, initialValue: T){ // recebo valor do tipo genérico
-    const [value, setValue] = useState<T>(initialValue)
+export function useLocalStorage<T>(item: string, initialValue: T) {
+    const [value, setValue] = useState<T>(initialValue);
 
     useEffect(() => {
+        // Verifica se está no lado do cliente e se o localStorage está disponível
         if (typeof window === 'undefined') return;
-        let value = localStorage.getItem(item)
-        if(value) setValue(JSON.parse(value))
-    }, [window])
+        
+        const storedValue = localStorage.getItem(item);  // Renomeando para evitar conflito com o estado 'value'
+        if (storedValue) {
+            setValue(JSON.parse(storedValue)); // Atualiza o estado com o valor do localStorage
+        }
+    }, []); // Passa a lista de dependências vazia para garantir que o efeito só execute uma vez após o carregamento
 
-    const updateLocalStorage = (newValue: T) => { // setando o valor do estado
-        setValue(newValue);
-        localStorage.setItem(item,JSON.stringify(newValue)); // salavando tudo em JSON, 
-    }
+    const updateLocalStorage = (newValue: T) => {
+        setValue(newValue); // Atualiza o estado
+        localStorage.setItem(item, JSON.stringify(newValue)); // Atualiza o localStorage
+    };
 
-    return { // retorna o HOOK 
+    return {
         value,
         updateLocalStorage
-    }
+    };
 }
