@@ -4,6 +4,7 @@ import { useProducts } from "@/hooks/useProducts"
 import { ProductCard } from "./product-card";
 import { styled } from "styled-components";
 
+// Esltilos dos Grides 
 const ListContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, 256px);

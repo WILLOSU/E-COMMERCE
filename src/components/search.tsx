@@ -80,7 +80,10 @@ export function Search({ isFirstScreen, onIconClick }: SearchProps) {
       </TagPage>
       <TagBar>
         <div>
-          <PrimaryInputWSearchIcon placeholder="Search headphone" />
+          <PrimaryInputWSearchIcon 
+             value={search}
+             handleChange={setSearch}          
+          placeholder="Search headphone" />
         </div>
       </TagBar>
     </>
