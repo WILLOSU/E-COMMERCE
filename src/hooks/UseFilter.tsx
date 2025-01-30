@@ -1,4 +1,4 @@
-import { FilterContext } from "@/contexts/FilterContext";
+import { FilterContext } from "@/contexts/filter-context";
 import { useContext } from "react";
 
 export function useFilter(){

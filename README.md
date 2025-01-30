@@ -30,7 +30,7 @@ O design base do projeto está disponível no Figma:
 - Copiar o arquivo JSON fornecido e criar uma API utilizando o **Run Mocky**;
 - Utilizar o link gerado no **Run Mocky** para realizar as requisições necessárias.
 
-#### **4. Página Home**
+#### **4. Página list**
 - Ao clicar no campo de busca, o usuário deverá ser redirecionado para a página **Search**;
 - Criar carrosséis de produtos utilizando uma biblioteca de sua preferência:
   - **Carrossel 1:** Renderizar produtos com base na **categoria**.

@@ -1,22 +1,36 @@
 :root {
   --border-radius: 12px;
   --logo-color: #5D5D6D;
-  --bg-primary: #F0F0F5;
-  --bg-secondary: #FFFF;
-  --text-dark: #BABABA;
-  --text-dark2: #0000;
-  --delete-color: #52EA5A;
-  --shapes-dark:#09090A ;
+  --bg-secondary: #F3F5F6;
+  --bg-primary: #FFFF;
+ 
+  --shapes-dark: #09090A;
+  --text-dark-2: #41414D;
+  
+  
   --shapes: #DCE2E6;
+  
+  --border-color: #A8A8B3;
+  --success-color: #51B853;
+
+  
+
+
+  --caterogy-list: #0ACF83;
+  --secondary-text: #F6F6F6;
+  --text-dark: #BABABA;
+  --car-control-color:  #52EA5A; 
 }
 
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
 }
+

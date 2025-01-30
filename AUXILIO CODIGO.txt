@@ -1,8 +1,8 @@
-export function Header({ title, isFirstScreen, onIconClick }: HeaderProps) {
+export function list({ title, isFirstScreen, onIconClick }: listProps) {
         return (
-            <TagHeader>
+            <Taglist>
                 <IconWrapper onClick={onIconClick}>
-                    {isFirstScreen ? <HomeIcon/> : <ChevronLeft/>}
+                    {isFirstScreen ? <listIcon/> : <ChevronLeft/>}
                 </IconWrapper>
                 <div>
                     <PrimaryInputWSearchIcon 
@@ -12,7 +12,7 @@ export function Header({ title, isFirstScreen, onIconClick }: HeaderProps) {
                     />
                     <CartControl />
                 </div>
-            </TagHeader>
+            </Taglist>
         );
     }
 
