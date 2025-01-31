@@ -1,5 +1,8 @@
+// Componente da tela Explorer - botão do filtro
+
 import { styled } from "styled-components"
-import { ArrowIcon } from "./icons/arrow-icon"
+import { FilterIcon } from "./icons/filter-icon"
+//import { Left } from "./icons/left"
 import { useState } from "react"
 import { useFilter } from "@/hooks/useFilter"
 import { PriorityTypes } from "@/types/priority-types"
@@ -71,15 +74,16 @@ export function FilterByPriority(){
     return(
         <FilterContainer>
             <button onClick={handleOpen}>
-                Organizar por
-                <ArrowIcon/>
+                
+                <FilterIcon/>
             </button>
             {isOpen && 
             <PriorityFilter>
-                <li onClick={() => handleUpdatePriority(PriorityTypes.NEWS)}>Novidades</li>
-                <li onClick={() => handleUpdatePriority(PriorityTypes.BIGGEST_PRICE)}>Preço: Maior - menor</li>
-                <li onClick={() => handleUpdatePriority(PriorityTypes.MINOR_PRICE)}>Preço: Menor - maior</li>
-                <li onClick={() => handleUpdatePriority(PriorityTypes.POPULARITY)}>Mais vendidos</li>
+                <li onClick={() => handleUpdatePriority(PriorityTypes.POPULARITY)}>Popularity</li>
+                <li onClick={() => handleUpdatePriority(PriorityTypes.NEWEST)}>Newest</li>
+                <li onClick={() => handleUpdatePriority(PriorityTypes.OLDEST)}>Oldest</li>
+                <li onClick={() => handleUpdatePriority(PriorityTypes.HIGH_PRICE)}>High Price</li>
+                <li onClick={() => handleUpdatePriority(PriorityTypes.LOW_PRICE)}>Low Price</li>
             </PriorityFilter>
         }
         </FilterContainer>

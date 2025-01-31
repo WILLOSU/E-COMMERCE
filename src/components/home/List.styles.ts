@@ -12,6 +12,7 @@ export const InputTextContainer = styled.div`
         justify-content: center;
         gap: 16px;
         width: 100%;  /* Para garantir que ocupe a largura disponível */
+        
     }
 
     @media (min-width: ${props => props.theme.tableBreakpoint}) {

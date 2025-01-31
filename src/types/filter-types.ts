@@ -1,4 +1,8 @@
 export enum FilterType {
-    'SHIRT',
-    'MUG'
+    'ALL',
+    'HEADPHONE',
+    'HEADSET',
+    
+    
 }
+

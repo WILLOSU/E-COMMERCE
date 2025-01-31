@@ -1,3 +1,6 @@
+// um bom lugar para guardar provider!!
+// abrigada todas as aplicações
+
 import { DM_Sans } from 'next/font/google'
 import { DefaultProviders } from '@/components/default-providers'
 

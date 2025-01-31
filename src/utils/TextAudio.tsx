@@ -1,4 +1,4 @@
-// Em TextAudio.tsx
+// Em TextAudio.tsx// Em TextAudio.tsx
 export function TextAudio() {
     return (
         <div className="text-audio">
@@ -6,3 +6,4 @@ export function TextAudio() {
         </div>
     );
 }
+

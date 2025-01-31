@@ -1,10 +1,11 @@
 export interface Product {
-    name: string;
-    price_in_cents: number;
     id: string;
-    image_url: string;
-    description?: string;
+    name: string;
     category?: string;
+    price: number; 
+    img: string;
+    reviews?: string;
+    
 }
 
 export interface ProductInCart extends Product {

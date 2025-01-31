@@ -4,73 +4,65 @@ import { useFilter } from "@/hooks/useFilter"
 import { FilterType } from "@/types/filter-types"
 import { styled } from "styled-components"
 
+
 interface FilterItemProps {
-  selected: boolean
+    selected: boolean
 }
 
-const FilterList = styled.div`
+const FilterList = styled.ul`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 11px;
+    gap: 40px;
     list-style: none;
-    
 `
-const FilterItem = styled.button<FilterItemProps>`
-    min-width: 107px;
-    height: 25px;
-    padding: 0px 13px;
-    border-radius: 30px;
-    opacity: 1;
-    border: none;
- 
 
+const FilterItem = styled.li<FilterItemProps>`
     font-family: inherit;
-    font-weight: ${(props) => (props.selected ? "600" : "400")};
-    font-size: 14px;
-    line-height: 20px;
+    font-weight: ${props => props.selected ? '600' : '400'};
+    font-size: 12px;
+    line-height: 18px;
     text-align: center;
-
+    //text-transform: uppercase;
     cursor: pointer;
-    background: ${(props) => (props.selected ? "var(--caterogy-list)" : "transparent")};
-    color: ${(props) => (props.selected ? "var(--bg-primary)" : "var(--text-dark)")};
-    transition: all 0.2s ease;
 
-    &:focus {
-        outline: none; /* Remove qualquer borda no foco */
+    color: var(--text-dark);
+
+    border-bottom: ${props => props.selected ? '4px solid var(--category-list);' : ''}
+
+    @media(min-width: ${props => props.theme.desktopBreakpoint}){
+        font-size: 16px;
+        line-height: 22px;
+    }
+`
+
+export function FilterByType(){
+    const { type, setType } = useFilter();
+
+    const handleChangeType = (value: FilterType) => {
+        setType(value)
     }
 
-    &:hover {
-        background: ${(props) => (props.selected ? "var(--caterogy-list)" : "var(--bg-secondary)")};
-    }
-`;
-
-
-export function FilterByType() {
-  const { type, setType } = useFilter()
-
-  const handleChangeType = (value: FilterType) => {
-    setType(value)
-  }
-
-  return (
-    <FilterList role="group" aria-label="Filtrar produtos por tipo">
-      <FilterItem
-        selected={type === FilterType.SHIRT}
-        onClick={() => handleChangeType(FilterType.SHIRT)}
-        aria-pressed={type === FilterType.SHIRT}
-      >
-        Headphone
-      </FilterItem>
-      <FilterItem
-        selected={type === FilterType.MUG}
-        onClick={() => handleChangeType(FilterType.MUG)}
-        aria-pressed={type === FilterType.MUG}
-      >
-       
-        Headset
-      </FilterItem>
-    </FilterList>
-  )
+    return(
+        <FilterList>
+            <FilterItem 
+                selected={type === FilterType.ALL}
+                onClick={() => handleChangeType(FilterType.ALL)}
+            >
+                All
+            </FilterItem>
+            <FilterItem 
+                selected={type === FilterType.HEADPHONE} 
+                onClick={() => handleChangeType(FilterType.HEADPHONE)}
+            >
+                Headphone
+            </FilterItem>
+            <FilterItem 
+                selected={type === FilterType.HEADSET} 
+                onClick={() => handleChangeType(FilterType.HEADSET)}
+            >
+                Headset
+            </FilterItem>
+        </FilterList>
+    )
 }
-

@@ -28,3 +28,4 @@ export function useProducts(){
       data: filteredProducts
     }
 }
+
